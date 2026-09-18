@@ -10,34 +10,32 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         navLinks.classList.remove('active');
     });
 });
-// ====================== CERTIFICATE MODAL ======================
+
 // ====================== CERTIFICATE MODAL ======================
 function openCertificate(type) {
     const modal = document.getElementById('certificateModal');
     const frame = document.getElementById('certificateFrame');
 
-    let file = "";
+    const certificates = {
+        excel: 'Excel.pdf',
+        canva: 'canva certificate.pdf',
+        'ai-era': 'AI Era.pdf'
+    };
 
-    if (type === 'excel') {
-        file = 'certificates/excel.pdf';
-    } 
-    else if (type === 'canva') {
-        file = 'certificates/canva.pdf';
-    } 
-    else if (type === 'ai-era') {
-        file = 'certificates/ai-era.pdf';
-    }
+    const file = certificates[type];
+    if (!file) return;
 
-    frame.src = file;
+    // encode spaces and other special characters in certificate filenames
+    frame.src = encodeURI(file);
     modal.style.display = 'block';
 }
 
 function closeCertificate() {
     const modal = document.getElementById('certificateModal');
     const frame = document.getElementById('certificateFrame');
-    
+
     modal.style.display = 'none';
-    frame.src = ''; 
+    frame.src = '';
 }
 
 // Modal ke bahar click karne pe band ho jaye
@@ -46,4 +44,4 @@ window.onclick = function(event) {
     if (event.target === modal) {
         closeCertificate();
     }
-}
+};
