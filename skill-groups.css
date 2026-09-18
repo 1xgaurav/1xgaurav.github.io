@@ -28,6 +28,12 @@
     font-weight: 500;
 }
 
+.skill-details span i {
+    width: 1.1rem;
+    margin-right: 0.35rem;
+    color: #f4c430;
+}
+
 .skill-details span::before {
     content: '✓';
     color: #f4c430;
