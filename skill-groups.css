@@ -1,5 +1,15 @@
 /* Expandable grouped skill cards */
+.skills-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
 .skill-card-expandable {
+    width: 100%;
     cursor: pointer;
     outline: none;
 }
@@ -26,6 +36,7 @@
     color: #fff8c5;
     font-size: 0.95rem;
     font-weight: 500;
+    line-height: 1.4;
 }
 
 .skill-details span i {
@@ -44,4 +55,17 @@
 .skill-card-expandable.expanded {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(11, 31, 58, 0.3);
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
