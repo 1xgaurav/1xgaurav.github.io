@@ -128,13 +128,24 @@ nav {
 
 .btn-outline {
     background: transparent;
-    border: 2px solid #0b1f3a;
-    color: #0b1f3a;
+    border: 2px solid #f7f0b8;
+    color: #f7f0b8;
+}
+
+.btn-outline i {
+    color: #ffffff;
+    margin-right: 0.6rem;
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 .btn-outline:hover {
-    background: #0b1f3a;
-    color: #fff8c5;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.btn-outline:hover i {
+    color: #ffffff;
 }
 
 section {
