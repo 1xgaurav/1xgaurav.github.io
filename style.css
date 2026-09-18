@@ -13,55 +13,6 @@ body {
     background-color: #fff8c5;
     color: #0b1f3a;
     line-height: 1.6;
-    overflow-x: hidden;
-    position: relative;
-}
-
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    inset: -20%;
-    pointer-events: none;
-    z-index: 0;
-    filter: blur(70px);
-    opacity: 0.55;
-}
-
-body::before {
-    background: radial-gradient(circle at 20% 20%, rgba(244, 196, 48, 0.8), transparent 30%),
-                radial-gradient(circle at 80% 30%, rgba(22, 59, 99, 0.42), transparent 32%),
-                radial-gradient(circle at 50% 80%, rgba(88, 126, 170, 0.38), transparent 28%);
-    animation: bgFloatOne 18s ease-in-out infinite alternate;
-}
-
-body::after {
-    background: radial-gradient(circle at 65% 60%, rgba(255, 255, 255, 0.7), transparent 25%),
-                radial-gradient(circle at 35% 70%, rgba(11, 31, 58, 0.22), transparent 30%);
-    animation: bgFloatTwo 22s ease-in-out infinite alternate;
-}
-
-@keyframes bgFloatOne {
-    0% {
-        transform: translate3d(-3%, -2%, 0) scale(1);
-    }
-    100% {
-        transform: translate3d(4%, 3%, 0) scale(1.12);
-    }
-}
-
-@keyframes bgFloatTwo {
-    0% {
-        transform: translate3d(2%, -4%, 0) scale(1.05);
-    }
-    100% {
-        transform: translate3d(-4%, 5%, 0) scale(1.16);
-    }
-}
-
-body > * {
-    position: relative;
-    z-index: 1;
 }
 
 nav {
@@ -69,8 +20,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 5%;
-    background: rgba(255, 248, 197, 0.8);
-    backdrop-filter: blur(10px);
+    background: #fff8c5;
     position: fixed;
     width: 100%;
     top: 0;
@@ -115,7 +65,7 @@ nav {
     justify-content: center;
     text-align: center;
     padding: 0 5%;
-    background: linear-gradient(135deg, rgba(255, 248, 197, 0.9) 0%, rgba(244, 232, 166, 0.85) 100%);
+    background: linear-gradient(135deg, #fff8c5 0%, #f4e8a6 100%);
 }
 
 .home-content h1 {
@@ -218,7 +168,7 @@ section {
 }
 
 .skill-card {
-    background: rgba(249, 240, 184, 0.9);
+    background: #f9f0b8;
     color: #0b1f3a;
     padding: 2rem 1rem;
     border-radius: 12px;
@@ -246,7 +196,7 @@ section {
 }
 
 .cert-card {
-    background: rgba(249, 240, 184, 0.9);
+    background: #f9f0b8;
     color: #0b1f3a;
     padding: 1.8rem;
     border-radius: 12px;
@@ -272,7 +222,7 @@ section {
 }
 
 .timeline-item {
-    background: rgba(249, 240, 184, 0.9);
+    background: #f9f0b8;
     color: #0b1f3a;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -314,7 +264,7 @@ section {
 footer {
     text-align: center;
     padding: 2rem;
-    background: rgba(11, 31, 58, 0.92);
+    background: #0b1f3a;
     color: #fff8c5;
 }
 
@@ -325,7 +275,7 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background: rgba(255, 248, 197, 0.95);
+        background: #fff8c5;
         flex-direction: column;
         padding: 1.5rem;
         text-align: center;
@@ -370,7 +320,7 @@ footer {
 }
 
 .project-card {
-    background: rgba(249, 240, 184, 0.9);
+    background: #f9f0b8;
     color: #0b1f3a;
     border-radius: 12px;
     overflow: hidden;
