@@ -59,22 +59,23 @@ nav {
 }
 
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 5%;
+    padding: 7rem 2%;
     background: linear-gradient(135deg, #fff8c5 0%, #f4e8a6 100%);
 }
 
 .home-content {
+    width: 100%;
+    max-width: 1200px;
     background: #c99800;
     padding: 2.2rem 2.5rem;
     border-radius: 24px;
     box-shadow: 0 18px 40px rgba(11, 31, 58, 0.18);
     border: 2px solid rgba(11, 31, 58, 0.18);
-    max-width: 820px;
 }
 
 .home-content h1 {
@@ -297,6 +298,10 @@ footer {
 
     .menu-toggle {
         display: block;
+    }
+
+    .home {
+        padding: 6rem 1rem 2rem;
     }
 
     .home-content {
