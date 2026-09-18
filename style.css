@@ -20,7 +20,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 5%;
-    background: #fff8c5;
+    background: #0b1f3a;
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,7 +31,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0b1f3a;
+    color: #fff8c5;
 }
 
 .nav-links {
@@ -41,20 +41,20 @@ nav {
 }
 
 .nav-links a {
-    color: #0b1f3a;
+    color: #fff8c5;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #163b63;
+    color: #f4c430;
 }
 
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
-    color: #0b1f3a;
+    color: #fff8c5;
     cursor: pointer;
 }
 
@@ -275,7 +275,7 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background: #fff8c5;
+        background: #0b1f3a;
         flex-direction: column;
         padding: 1.5rem;
         text-align: center;
@@ -381,8 +381,8 @@ footer {
 }
 
 .modal-content {
-    background-color: #fff8c5;
-    color: #0b1f3a;
+    background-color: #0b1f3a;
+    color: #fff8c5;
     margin: 3% auto;
     padding: 20px;
     width: 90%;
@@ -398,11 +398,11 @@ footer {
     top: 12px;
     font-size: 32px;
     font-weight: bold;
-    color: #0b1f3a;
+    color: #fff8c5;
     cursor: pointer;
     z-index: 10;
 }
 
 .close:hover {
-    color: #163b63;
+    color: #f4c430;
 }
