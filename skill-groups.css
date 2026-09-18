@@ -1,0 +1,41 @@
+/* Expandable grouped skill cards */
+.skill-card-expandable {
+    cursor: pointer;
+    outline: none;
+}
+
+.skill-card-expandable:focus-visible {
+    box-shadow: 0 0 0 3px #f4c430, 0 10px 20px rgba(11, 31, 58, 0.18);
+}
+
+.skill-details {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255, 248, 197, 0.45);
+    text-align: left;
+}
+
+.skill-card-expandable.expanded .skill-details {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.skill-details span {
+    display: block;
+    color: #fff8c5;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.skill-details span::before {
+    content: '✓';
+    color: #f4c430;
+    font-weight: 700;
+    margin-right: 0.45rem;
+}
+
+.skill-card-expandable.expanded {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(11, 31, 58, 0.3);
+}
