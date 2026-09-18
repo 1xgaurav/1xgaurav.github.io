@@ -168,8 +168,8 @@ section {
 }
 
 .skill-card {
-    background: #f9f0b8;
-    color: #0b1f3a;
+    background: #0b1f3a;
+    color: #fff8c5;
     padding: 2rem 1rem;
     border-radius: 12px;
     text-align: center;
@@ -178,12 +178,12 @@ section {
 
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(11, 31, 58, 0.12);
+    box-shadow: 0 10px 20px rgba(11, 31, 58, 0.18);
 }
 
 .skill-card i {
     font-size: 2.5rem;
-    color: #0b1f3a;
+    color: #f4c430;
     margin-bottom: 1rem;
 }
 
@@ -196,15 +196,15 @@ section {
 }
 
 .cert-card {
-    background: #f9f0b8;
-    color: #0b1f3a;
+    background: #0b1f3a;
+    color: #fff8c5;
     padding: 1.8rem;
     border-radius: 12px;
-    border-left: 4px solid #0b1f3a;
+    border-left: 4px solid #f4c430;
 }
 
 .cert-card h3 {
-    color: #0b1f3a;
+    color: #f4c430;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
@@ -212,7 +212,7 @@ section {
 .cert-card span {
     display: inline-block;
     margin-top: 0.8rem;
-    color: #163b63;
+    color: #dfeaf8;
     font-size: 0.9rem;
 }
 
@@ -222,21 +222,21 @@ section {
 }
 
 .timeline-item {
-    background: #f9f0b8;
-    color: #0b1f3a;
+    background: #0b1f3a;
+    color: #fff8c5;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 10px;
-    border-left: 4px solid #0b1f3a;
+    border-left: 4px solid #f4c430;
 }
 
 .timeline-item h3 {
-    color: #0b1f3a;
+    color: #f4c430;
     margin-bottom: 0.3rem;
 }
 
 .timeline-item span {
-    color: #163b63;
+    color: #dfeaf8;
     font-size: 0.95rem;
 }
 
@@ -320,8 +320,8 @@ footer {
 }
 
 .project-card {
-    background: #f9f0b8;
-    color: #0b1f3a;
+    background: #0b1f3a;
+    color: #fff8c5;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -329,7 +329,7 @@ footer {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(11, 31, 58, 0.12);
+    box-shadow: 0 10px 25px rgba(11, 31, 58, 0.18);
 }
 
 .project-card img {
@@ -339,13 +339,13 @@ footer {
 }
 
 .project-card h3 {
-    color: #0b1f3a;
+    color: #f4c430;
     padding: 1rem 1rem 0.5rem;
 }
 
 .project-card p {
     padding: 0 1rem 1.5rem;
-    color: #0b1f3a;
+    color: #fff8c5;
     font-size: 0.95rem;
 }
 
