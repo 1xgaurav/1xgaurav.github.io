@@ -440,3 +440,19 @@ footer {
 .close:hover {
     color: #f4c430;
 }
+
+/* Keep long contact details inside their cards instead of clipping them. */
+.contact-card span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .contact-card {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        font-size: 0.95rem;
+    }
+}
