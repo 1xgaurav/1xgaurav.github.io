@@ -15,9 +15,10 @@
 
         .contact-cards {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1.25rem;
+            grid-template-columns: repeat(3, minmax(220px, 1fr));
+            gap: 1.6rem 1.25rem;
             width: 100%;
+            align-items: stretch;
         }
 
         .contact-card {
@@ -25,7 +26,7 @@
             align-items: center;
             justify-content: center;
             gap: 0.7rem;
-            min-height: 76px;
+            min-height: 110px;
             padding: 1rem 1.25rem;
             background: linear-gradient(145deg, #ffffff, #fff8c5);
             border: 1px solid rgba(11, 31, 58, 0.12);
@@ -97,7 +98,7 @@
     <section id="about" class="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-            <p>"Hi, I'm Gaurav Kumar Rawal, Currently, I am Pursuing a Bachelor of Computer Applications from The Institute of Technology and Management, GIDA Gorakhpur. I am passionate about Technolo[...]</p>
+            <p>"Hi, I'm Gaurav Kumar Rawal, Currently, I am Pursuing a Bachelor of Computer Applications from The Institute of Technology and Management, GIDA Gorakhpur. I am passionate about Technology and eager to learn every day. I am developing skills and building a strong foundation in computer applications, helping me grow both personally and professionally."</p>
             <p>I am interested in Graphic Design, MS Office Work, and Continuous Learning. I do Design Work using Canva and keep learning new skills.</p>
         </div>
     </section>
@@ -106,12 +107,12 @@
     <section id="skills" class="skills">
         <h2 class="section-title">My Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-file-excel"></i><h3>All of MS Office</h3><div class="skill-details"><span>MS[...]</span></div></div>
-            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-paint-brush"></i><h3>Graphic Design</h3><div class="skill-details"><span>Can[...]
-            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-robot"></i><h3>AI Tools</h3><div class="skill-details"><span>ChatGPT</span><[...]
-            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-comments"></i><h3>Communication</h3><div class="skill-details"><span>English[...]
-            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-laptop"></i><h3>Computer</h3><div class="skill-details"><span>Basic to Advan[...]
-            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-share-nodes"></i><h3>Social Media Handling</h3><div class="skill-details"><s[...]
+            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-file-excel"></i><h3>All of MS Office</h3><div class="skill-details"><span>MS Excel</span><span>MS Word</span><span>PowerPoint</span></div></div>
+            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-paint-brush"></i><h3>Graphic Design</h3><div class="skill-details"><span>Canva</span><span>Poster Design</span><span>Social Media Design</span></div></div>
+            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-robot"></i><h3>AI Tools</h3><div class="skill-details"><span>ChatGPT</span><span>AI Content</span><span>Automation</span></div></div>
+            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-comments"></i><h3>Communication</h3><div class="skill-details"><span>English</span><span>Hindi</span><span>Team Coordination</span></div></div>
+            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-laptop"></i><h3>Computer</h3><div class="skill-details"><span>Basic to Advanced</span><span>Web Basics</span><span>Digital Skills</span></div></div>
+            <div class="skill-card skill-card-expandable" tabindex="0" role="button" aria-expanded="false"><i class="fas fa-share-nodes"></i><h3>Social Media Handling</h3><div class="skill-details"><span>Instagram</span><span>Facebook</span><span>Content Posting</span></div></div>
         </div>
     </section>
 
@@ -119,9 +120,9 @@
     <section id="certificates" class="certificates">
         <h2 class="section-title">Certificates</h2>
         <div class="cert-grid">
-            <div class="cert-card"><h3>Excel for Beginners</h3><p>Great Learning (Microsoft)</p><span>September (2026)</span><button onclick="openCertificate('excel')" class="certificate-btn">View Cer[...]
-            <div class="cert-card"><h3>Canva Essentials: Quick & Easy Design Skills</h3><p>Great Learning</p><span>September (2026)</span><button onclick="openCertificate('canva')" class="certificate-[...]
-            <div class="cert-card"><h3>Critical Thinking in the AI Era</h3><p>HP Life / HP Foundation</p><span>September (2026)</span><button onclick="openCertificate('ai-era')" class="certificate-btn[...]
+            <div class="cert-card"><h3>Excel for Beginners</h3><p>Great Learning (Microsoft)</p><span>September (2026)</span><button onclick="openCertificate('excel')" class="certificate-btn">View Certificate</button></div>
+            <div class="cert-card"><h3>Canva Essentials: Quick & Easy Design Skills</h3><p>Great Learning</p><span>September (2026)</span><button onclick="openCertificate('canva')" class="certificate-btn">View Certificate</button></div>
+            <div class="cert-card"><h3>Critical Thinking in the AI Era</h3><p>HP Life / HP Foundation</p><span>September (2026)</span><button onclick="openCertificate('ai-era')" class="certificate-btn">View Certificate</button></div>
             <div class="cert-card"><h3>Advance Excel With AI</h3><p>SkillCourse</p><span>Appearing</span></div>
             <div class="cert-card"><h3>Microsoft Power BI</h3><p>SkillCourse</p><span>Appearing</span></div>
         </div>
@@ -140,7 +141,7 @@
     <!-- Experience Section -->
     <section id="experience" class="education">
         <h2 class="section-title">Work Experience</h2>
-        <div class="timeline"><div class="timeline-item"><h3>Canva Graphics Design</h3><span>• Freelance Graphic Designer | 2024-2026 – Present (2 Years)</span><h3>Store Accounting</h3><p>• Rawa[...]
+        <div class="timeline"><div class="timeline-item"><h3>Canva Graphics Design</h3><span>• Freelance Graphic Designer | 2024-2026 – Present (2 Years)</span><h3>Store Accounting</h3><p>• Rawaal Store Accounts Assistant</p></div></div>
     </section>
 
     <!-- Contact Section -->
@@ -160,7 +161,7 @@
 
     <footer><p>© 2026 Gkrawal. All rights reserved.</p></footer>
 
-    <div id="certificateModal" class="modal"><div class="modal-content"><span class="close" onclick="closeCertificate()">&times;</span><iframe id="certificateFrame" src="" width="100%" height="600px" ...
+    <div id="certificateModal" class="modal"><div class="modal-content"><span class="close" onclick="closeCertificate()">&times;</span><iframe id="certificateFrame" src="" width="100%" height="600px" style="border:none;"></iframe></div></div>
     <script src="script.js"></script>
 </body>
 </html>
